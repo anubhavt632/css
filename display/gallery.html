@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>image gallery page</title>
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXw5oqwDqBgOEyzA8uiAHtLfkR8-zHrhZDLA&usqp=CAU"
+    />
+    <style>
+      body {
+        text-align: center;
+        background-color: rgb(60, 58, 58);
+      }
+      footer {
+        color: white;
+        font-size: 2rem;
+        margin-top: 1rem;
+      }
+      h1 {
+        color: plum;
+      }
+      .grid-container {
+        display: grid;
+        gap: 0.3rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 25rem);
+      }
+      .grid-container > div > img {
+        width: 100%;
+        height: 100%;
+      }
+      .grid-container > div > img:hover {
+        filter: brightness(70%);
+        transition: 2s all;
+        transform: scale(1.06);
+      }
+      .grid-container > div {
+        position: relative;
+        overflow: hidden;
+      }
+      .image-title {
+        position: absolute;
+        bottom: 1rem;
+        color: white;
+        left: 40%;
+        font-size: 1.4rem;
+        display: block;
+      }
+      .grid-container > div:hover .image-title {
+        font-size: 1.6rem;
+        transition: 2s all;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Image Gallery</h1>
+    <div class="grid-container">
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlfGVufDB8fDB8fHww"
+          alt="waterfall"
+        />
+        <div class="image-title">Waterfall</div>
+      </div>
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D"
+          alt="rain"
+        />
+        <div class="image-title">Rain</div>
+      </div>
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D"
+          alt="lake"
+        />
+        <div class="image-title">Lake</div>
+      </div>
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1505144808419-1957a94ca61e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D"
+          alt="sea-shore"
+        />
+      </div>
+      <div>
+        <img
+          src="https://plus.unsplash.com/premium_photo-1673264933212-d78737f38e48?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D"
+          alt="mountain"
+        />
+      </div>
+      <div>
+        <img
+          src="https://plus.unsplash.com/premium_photo-1673292293042-cafd9c8a3ab3?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D"
+          alt="jungle"
+        />
+      </div>
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1475113548554-5a36f1f523d6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D"
+          alt="crop"
+        />
+      </div>
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1414609245224-afa02bfb3fda?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D"
+          alt="beach"
+        />
+      </div>
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D"
+          alt="trees"
+        />
+      </div>
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D"
+          alt="lake"
+        />
+      </div>
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D"
+          alt="reserviour"
+        />
+      </div>
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D"
+          alt="bargad"
+        />
+      </div>
+    </div>
+    <footer>Made By Anubhav</footer>
+  </body>
+</html>
